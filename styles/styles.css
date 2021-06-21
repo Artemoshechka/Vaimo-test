@@ -178,9 +178,15 @@ body {
   cursor: pointer;
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 .mobile_upper_part {
   display: none;
-  height: 72px;
+  min-height: 72px;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -546,7 +552,7 @@ body {
 .mobile_footer {
   margin: 0 auto;
   display: none;
-  width: 328px;
+  width: 91%;
   flex-direction: column;
 }
 .mobile_footer input {
@@ -643,7 +649,7 @@ body {
 
   .main {
     background: url("../img/393865.svg") center no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 480px;
   }
   .main > h1 {
@@ -667,15 +673,16 @@ body {
   }
 
   .register-form {
-    width: 360px;
+    width: 91%;
     text-align: center;
   }
   .register-form #email {
-    width: 224px;
+    width: 62%;
     height: 32px;
+    margin-right: 5px;
   }
   .register-form #submit_email {
-    width: 96px;
+    width: 26%;
     height: 32px;
   }
 
