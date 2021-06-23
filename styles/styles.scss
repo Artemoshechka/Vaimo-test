@@ -74,6 +74,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   .logo {
+    flex-basis: 0;
+    flex-grow: 1;
     padding-top: 16px;
     padding-left: 24px;
     h3 {
@@ -89,6 +91,10 @@ body {
         text-decoration: none;
       }
     }
+  }
+  .search_and_nav {
+    flex-basis: 0;
+    flex-grow: 3;
   }
   .search_form {
     padding-top: 24px;
@@ -137,6 +143,7 @@ body {
     }
   }
   .navigation {
+    text-align: center;
     li {
       font-family: $main_font;
       font-style: normal;
@@ -157,7 +164,10 @@ body {
   }
   .account {
     padding-top: 29px;
+    flex-basis: 0;
+    flex-grow: 1;
     p {
+      text-align: right;
       color: #fff;
       font-family: $main_font;
       font-style: normal;
@@ -341,6 +351,8 @@ body {
   .logo {
     padding-top: 16px;
     padding-left: 24px;
+    flex-basis: 0;
+    flex-grow: 1;
     h3 {
       font-family: $main_font;
       font-style: normal;
@@ -353,6 +365,10 @@ body {
         text-decoration: none;
       }
     }
+  }
+  .search_and_nav {
+    flex-basis: 0;
+    flex-grow: 3;
   }
   .search_form {
     padding-top: 24px;
@@ -400,6 +416,7 @@ body {
     }
   }
   .navigation {
+    text-align: center;
     li {
       font-family: $main_font;
       font-style: normal;
@@ -420,7 +437,10 @@ body {
   }
   .account {
     padding-top: 29px;
+    flex-basis: 0;
+    flex-grow: 1;
     p {
+      text-align: right;
       color: #000;
       font-family: $main_font;
       font-style: normal;
