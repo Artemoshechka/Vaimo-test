@@ -641,6 +641,10 @@ body {
     padding: 16px 16px 12.5px;
     display: flex;
     justify-content: space-between;
+    transition: color 0.2s ease-out;
+    &:hover {
+      color: #0770cf;
+    }
     span {
       margin-top: 4px;
       background: url("../img/chevrondown copy 3.svg");
@@ -668,6 +672,10 @@ body {
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
+        transition: color 0.2s ease-out;
+        &:hover {
+          color: #0770cf;
+        }
       }
     }
   }
