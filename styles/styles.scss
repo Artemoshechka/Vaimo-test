@@ -4,6 +4,13 @@
 $main_font: 'Poppins', sans-serif;
 $sub_font: 'Cormorant Garamond', sans-serif;
 
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
 body {
   background: #d9d2d2;
 }
@@ -159,6 +166,11 @@ body {
       a {
         color: #fff;
         text-decoration: none;
+        border-bottom: solid 1px transparent;
+        transition: border-bottom-color .2s ease-out;
+        &:hover {
+          border-bottom: solid 1px #fff;
+        }
       }
     }
   }
@@ -432,6 +444,11 @@ body {
       a {
         color: #000;
         text-decoration: none;
+        border-bottom: transparent solid 1px;
+        transition: border-bottom-color .2s ease-out;
+        &:hover {
+          border-bottom: solid 1px #000;
+        }
       }
     }
   }
@@ -508,6 +525,7 @@ body {
   border-radius: 3px;
   border: none;
   background: #000;
+  transition: background-color 0.2s ease-out;
   color: #fff;
   height: 33px;
   width: 94px;
@@ -520,6 +538,7 @@ body {
   letter-spacing: 1px;
   &:hover {
     cursor: pointer;
+    background-color: #2e2d2b;
   }
 }
 

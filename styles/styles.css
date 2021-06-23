@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
+
 body {
   background: #d9d2d2;
 }
@@ -158,6 +165,11 @@ body {
 .upper_part .navigation li a {
   color: #fff;
   text-decoration: none;
+  border-bottom: solid 1px transparent;
+  transition: border-bottom-color 0.2s ease-out;
+}
+.upper_part .navigation li a:hover {
+  border-bottom: solid 1px #fff;
 }
 .upper_part .account {
   padding-top: 29px;
@@ -431,6 +443,11 @@ body {
 .upper_part_logged .navigation li a {
   color: #000;
   text-decoration: none;
+  border-bottom: transparent solid 1px;
+  transition: border-bottom-color 0.2s ease-out;
+}
+.upper_part_logged .navigation li a:hover {
+  border-bottom: solid 1px #000;
 }
 .upper_part_logged .account {
   padding-top: 29px;
@@ -504,6 +521,7 @@ body {
   border-radius: 3px;
   border: none;
   background: #000;
+  transition: background-color 0.2s ease-out;
   color: #fff;
   height: 33px;
   width: 94px;
@@ -517,6 +535,7 @@ body {
 }
 #submit_email:hover {
   cursor: pointer;
+  background-color: #2e2d2b;
 }
 
 .footer {
