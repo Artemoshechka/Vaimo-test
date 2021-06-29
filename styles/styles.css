@@ -153,20 +153,19 @@ body {
   cursor: pointer;
 }
 .upper_part .navigation {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
 }
 .upper_part .navigation li {
+  list-style-type: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
   letter-spacing: 1px;
-  display: inline;
-  margin-right: 32px;
-}
-.upper_part .navigation li:last-child {
-  margin-right: 0;
 }
 .upper_part .navigation li a {
   color: #fff;
